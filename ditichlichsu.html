@@ -6,9 +6,11 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@400..800&display=swap" rel="stylesheet">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Giới thiệu chung về cầu Hiền Lương</title> 
+    <title>Các công trình và di tích liên quan tại khu vực cầu Hiền Lương</title>
     <style>
         * {
+            margin: 0;
+            padding: 0;
             box-sizing: border-box;
         }
         body {
@@ -18,50 +20,58 @@
             background-size: cover;
             color: #003366; 
             font-family: "Baloo 2";
-            margin: 0;
         }
         th {
-            background-color: #4CAF50; 
+            background-color: #4CAF50;
             color: #FFFFFF;
             width: 100%;
         }
         .container {
             display: flex;
             flex-wrap: wrap;
-            font-size: 20px;
-            margin: 20px auto;
             justify-content: center;
             text-align: center;
+            gap: 20px;
+            padding: 20px;
+            margin: auto;
         }
         footer {
-            background-color: #ADD8E6; 
+            background-color: #ADD8E6;
             border-radius: 50%;
             padding: 15px;
             width: 200px;
             height: 200px;
             text-align: center;
-            color: #13234B; 
+            color: #13234B;
             font-size: 14px;
             box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
             margin: 20px auto;
         }
         .header {
-            background-color: #4CAF50; 
-            color: #ffffff;
+            background-color: #4CAF50;
             border-radius: 20px;
             box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
             padding: 15px;
             font-size: 25px;
+            color: #ffffff;
+            text-align: center;
             margin: 20px;
+            font-family: "Baloo 2";
+            width: 100%;
         }
         .Bang {
-            margin: 10px;
             background-color: #FFFACD;
             border-radius: 20px;
             height: 100%;
+            width: 100%;
+            max-width: 350px;
             box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
             transition: background-color 0.3s ease, box-shadow 0.3s ease;
             padding: 15px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: left;
         }
         .Bang:hover {
             box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.2);
@@ -71,16 +81,44 @@
             border-radius: 20px;
             max-width: 100%;
             height: auto;
+            margin-top: 15px;
         }
         .p {
             font-weight: 700;
         }
+        @media only screen and (max-width: 1200px) {
+            .header {
+                font-size: 22px;
+            }
+            .container {
+                gap: 15px;
+            }
+        }
+        @media only screen and (max-width: 768px) {
+            .header {
+                font-size: 20px;
+            }
+            .container {
+                gap: 10px;
+                padding: 10px;
+            }
+            .Bang {
+                max-width: 300px;
+            }
+        }
         @media only screen and (max-width: 550px) {
+            .header {
+                font-size: 18px;
+            }
             .container {
                 font-size: 16px;
             }
-            .header {
-                font-size: 20px;
+            .Bang {
+                max-width: 100%;
+            }
+            footer {
+                width: 150px;
+                height: 150px;
             }
         }
     </style>
@@ -114,5 +152,12 @@
         <p><a href="trangchu.html" style="color: #13234B; text-decoration: none;">Quay trở về trang chủ</a><br> 
         Thực hiện bởi Nguyễn Đức Nhật Anh, Nguyễn Thị Quỳnh Như và Hoàng Thảo Nguyên<br>26/12/2024</p>
     </footer>
+</body>
+</html>
+
+
+  
+  <!-- Back to Top Button -->
+  <div class="back-to-top" onclick="scrollToTop()">↑</div>
 </body>
 </html>
